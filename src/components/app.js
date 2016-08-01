@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
-import BookList from './booklist.js'
-import BookActive from './bookactive'
+import React from 'react';
+import { Component } from 'react';
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <BookList />
-        <BookActive />
+        {this.props.children}
       </div>
     );
   }

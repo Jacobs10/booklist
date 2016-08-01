@@ -1,7 +1,7 @@
 export default function(state = null, action){
   switch (action.type){
-    case 'SELECT_BOOK' :
+    case 'SHOW_BOOK_DETAILS' :
       return action.payload
   }
-  return "None"
+  return state
 }

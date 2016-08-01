@@ -6,3 +6,10 @@ export function selectBook(book){
     payload: book
   }
 }
+
+export function showBook(book){
+  return {
+    type: 'SHOW_BOOK_DETAILS',
+    payload: book
+  }
+}
