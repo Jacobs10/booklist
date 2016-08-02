@@ -1,6 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { selectBook } from '../actions/index'
+import { Link } from 'react-router'
+
 class BookList extends React.Component {
 
   render(){
@@ -16,9 +18,12 @@ class BookList extends React.Component {
            ));
        });
     return (
-      <ul>
-      {rows}
-      </ul>
+      <div>
+        <ul>
+          {rows}
+        </ul>
+        <Link to={'add'}>Add a New Book </Link>
+      </div>
     )
 }
 }

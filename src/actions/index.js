@@ -13,3 +13,15 @@ export function showBook(book){
     payload: book
   }
 }
+export function addBook(book){
+  return {
+    type: 'ADD_BOOK',
+    payload: book
+  }
+}
+export function deleteBook(book){
+  return {
+    type: 'DELETE_BOOK',
+    payload: book
+  }
+}
